@@ -126,6 +126,18 @@ $has_actions = (
 ?>
 ```
 
+An alternative approach would be to coerce the expression directly to boolean:
+
+```php
+<?php
+$has_actions = (bool)(
+    ($showPublicationLinks && !empty($publication['pdf'])) ||
+    !empty($publication['htmlUrl']) ||
+    !empty($publication['supplementUrl']) ||
+    !empty($publication['contactEmail'])
+);
+?>
+
 ## Block 3
 
 ```php
