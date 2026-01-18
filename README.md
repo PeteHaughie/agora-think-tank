@@ -63,4 +63,5 @@ your approach and reasoning than in perfect polish.
 - The fonts are from Google Fonts but loaded locally as to sidestep GDPR issues (not an issue with local installation).
 - The team member data is loaded from the provided `Agora_web_developer_team_data.json` file and displayed in a responsive card layout. There is no modification of the data and all link type detection is done in the frontend.
 - All SVGs are CSS inlined for performance and ease of use.
+- It is not responsive beyond desktop widths.
 - I did spend a bit more than a few hours on this exercise as I wanted to ensure I delivered a quality solution and I was having fun.
