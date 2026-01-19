@@ -1,0 +1,39 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "name": "Anna Müller",
+      "role": "Senior Researcher",
+      "image": "/images/team/anna.jpg",
+      "link": "mailto:anna.mueller@example.org"
+    },
+    {
+      "id": 2,
+      "name": "David Schneider",
+      "role": "Junior Analyst",
+      "image": "/images/team/david.jpg",
+      "link": "https://www.linkedin.com/in/david-schneider"
+    },
+    {
+      "id": 3,
+      "name": "Fatima Rahman",
+      "role": "Project Manager",
+      "image": "/images/team/fatima.jpg",
+      "link": "https://example.org/team/fatima"
+    },
+    {
+      "id": 4,
+      "name": "Markus Becker",
+      "role": "Head of Communications",
+      "image": "/images/team/markus.jpg",
+      "link": "mailto:markus.becker@example.org"
+    },
+    {
+      "id": 5,
+      "name": "Julia Nguyen",
+      "role": "Data Scientist",
+      "image": "/images/team/julia.jpg",
+      "link": "https://www.linkedin.com/in/julia-nguyen"
+    }
+  ]
+}

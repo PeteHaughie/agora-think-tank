@@ -1,0 +1,18 @@
+/* Geist */
+@font-face {
+  font-family: "Geist-Regular";
+  font-weight: 400;
+  src: url("../fonts/Geist-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Geist-Bold";
+  font-weight: 700;
+  src: url("../fonts/Geist-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Geist-Light";
+  font-weight: 300;
+  src: url("../fonts/Geist-Light.ttf") format("truetype");
+}

@@ -1,0 +1,105 @@
+/* Team list layout: up to three items per row, centered */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+  justify-content: center;
+  list-style: none;
+  margin: 45px 0 00;
+  padding: 0;
+}
+
+.item {
+  align-items: center;
+  background-color: var(--card-bg);
+  border-radius: 36px;
+  box-shadow: 0 4px 11.4px 0 rgba(0, 0, 0, 0.11);
+  box-sizing: border-box;
+  display: flex;
+  filter: brightness(var(--card-filter));
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: 16px;
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: background-color 0.2s ease, filter 0.2s ease;
+  width: clamp(220px, calc((100% - 2rem) / 3), 343px);
+  &:hover {
+    filter: brightness(100%);
+    background-color: var(--card-bg-hover);
+  }
+}
+
+.avatar {
+  aspect-ratio: 1 / 1;
+  border-radius: 24px;
+  display: block;
+  flex-shrink: 0;
+  margin-top: 23px;
+  object-fit: cover;
+  object-position: top;
+  width: calc(100% - 40px);
+}
+
+.meta {
+  font-family: "Geist-Light", sans-serif;
+  text-align: left;
+  margin-bottom: 25px;
+  width: calc(100% - 50px);
+}
+
+.name {
+  color: var(--card-meta-name);
+  font-family: "Geist-Regular", sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.role {
+  color: var(--card-meta-role);
+  font-size: 0.9rem;
+  margin: 0 0 21px;
+}
+
+a {
+  background-color: var(--card-link-bg);
+  background-repeat: no-repeat;
+  border-radius: 616px;
+  box-shadow: 0 2.467px 2.467px 0 rgba(0, 0, 0, 0.11), 0 2.467px 2.467px 0 rgba(0, 0, 0, 0.03) inset;
+  background-color: var(--card-link-bg);
+  color: var(--card-link);
+  display: inline-block;
+  padding: 6px 21px;
+  text-decoration: none;
+  text-indent: 20px;
+  padding-left: 16px;
+  transition: background-color 0.2s ease;
+  &.link {
+    background-image: var(--card-link-icon);
+    background-position: top 7px left 10px;
+  }
+  &.linkedin {
+    background-image: var(--card-linkedin-icon);
+    background-position: top 8px left 12px;
+  }
+  &.email {
+    background-image: var(--card-mail-icon);
+    background-position: top 9px left 10px;
+  }
+  &:hover {
+    background-color: var(--card-link-bg-hover);
+    color: var(--card-link-hover);
+    &.link {
+      background-image: var(--card-link-icon-hover);
+    }
+    &.linkedin {
+      background-image: var(--card-linkedin-icon-hover);
+    }
+    &.email {
+      background-image: var(--card-mail-icon-hover);
+    }
+  }
+}
+

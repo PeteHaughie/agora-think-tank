@@ -1,0 +1,116 @@
+:root{
+  /* colour vars */
+  --light-0: #ffffff;
+  --light-1: #ececec;
+  --light-2: #ededed;
+  --light-3: #f9f9f9;
+  --light-4: #686868;
+  --light-5: #2e2e2e;
+  --light-6: var(--light-4);
+  --light-7: var(--light-5);
+  --light-mail: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'19\' height=\'14\' viewBox=\'0 0 19 14\' fill=\'none\'> <path d=\'M2.01133 0H16.3779C17.4882 0 18.3893 0.901074 18.3893 2.01133V11.7806C18.3893 12.3141 18.1774 12.8256 17.8002 13.2028C17.423 13.58 16.9114 13.792 16.3779 13.792H2.01133C1.47789 13.792 0.9663 13.58 0.589104 13.2028C0.211907 12.8256 0 12.3141 0 11.7806L0 2.01133C0 0.901074 0.901074 0 2.01133 0ZM1.72399 11.7818C1.72399 11.9404 1.85272 12.0691 2.01133 12.0691H16.3779C16.4541 12.0691 16.5272 12.0388 16.5811 11.9849C16.635 11.9311 16.6653 11.858 16.6653 11.7818V4.37779L9.63138 8.50159C9.49898 8.5794 9.3482 8.62042 9.19463 8.62042C9.04107 8.62042 8.89029 8.5794 8.75789 8.50159L1.72399 4.37779V11.7818ZM16.6653 2.37911V2.01133C16.6653 1.93512 16.635 1.86204 16.5811 1.80815C16.5272 1.75427 16.4541 1.72399 16.3779 1.72399H2.01133C1.93512 1.72399 1.86204 1.75427 1.80815 1.80815C1.75427 1.86204 1.72399 1.93512 1.72399 2.01133V2.37911L9.19463 6.75806L16.6653 2.37911Z\' fill=\'%23686868\'/></svg>");
+  --light-mail-hover: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'19\' height=\'14\' viewBox=\'0 0 19 14\' fill=\'none\'> <path d=\'M2.01133 0H16.3779C17.4882 0 18.3893 0.901074 18.3893 2.01133V11.7806C18.3893 12.3141 18.1774 12.8256 17.8002 13.2028C17.423 13.58 16.9114 13.792 16.3779 13.792H2.01133C1.47789 13.792 0.9663 13.58 0.589104 13.2028C0.211907 12.8256 0 12.3141 0 11.7806L0 2.01133C0 0.901074 0.901074 0 2.01133 0ZM1.72399 11.7818C1.72399 11.9404 1.85272 12.0691 2.01133 12.0691H16.3779C16.4541 12.0691 16.5272 12.0388 16.5811 11.9849C16.635 11.9311 16.6653 11.858 16.6653 11.7818V4.37779L9.63138 8.50159C9.49898 8.5794 9.3482 8.62042 9.19463 8.62042C9.04107 8.62042 8.89029 8.5794 8.75789 8.50159L1.72399 4.37779V11.7818ZM16.6653 2.37911V2.01133C16.6653 1.93512 16.635 1.86204 16.5811 1.80815C16.5272 1.75427 16.4541 1.72399 16.3779 1.72399H2.01133C1.93512 1.72399 1.86204 1.75427 1.80815 1.80815C1.75427 1.86204 1.72399 1.93512 1.72399 2.01133V2.37911L9.19463 6.75806L16.6653 2.37911Z\' fill=\'%232E2E2E\'/></svg>");
+  --light-link: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'18\' height=\'18\' viewBox=\'0 0 18 18\' fill=\'none\'> <path d=\'M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z\' stroke=\'%23686868\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/> <path d=\'M5.80001 9C5.80001 13.4183 7.2327 17 9.00001 17C10.7673 17 12.2 13.4183 12.2 9C12.2 4.58172 10.7673 1 9.00001 1C7.2327 1 5.80001 4.58172 5.80001 9Z\' stroke=\'%23686868\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/> <path d=\'M1 9H17\' stroke=\'%23686868\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/></svg>");
+  --light-link-hover: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'18\' height=\'18\' viewBox=\'0 0 18 18\' fill=\'none\'> <path d=\'M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z\' stroke=\'%232E2E2E\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/> <path d=\'M5.80001 9C5.80001 13.4183 7.2327 17 9.00001 17C10.7673 17 12.2 13.4183 12.2 9C12.2 4.58172 10.7673 1 9.00001 1C7.2327 1 5.80001 4.58172 5.80001 9Z\' stroke=\'%232E2E2E\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/> <path d=\'M1 9H17\' stroke=\'%232E2E2E\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/></svg>");
+  --light-linkedin: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 16 16\' fill=\'none\'> <path d=\'M0 1.146C0 0.513 0.526 0 1.175 0H14.825C15.474 0 16 0.513 16 1.146V14.854C16 15.487 15.474 16 14.825 16H1.175C0.526 16 0 15.487 0 14.854V1.146ZM4.943 13.394V6.169H2.542V13.394H4.943ZM3.743 5.182C4.58 5.182 5.101 4.628 5.101 3.934C5.086 3.225 4.581 2.686 3.759 2.686C2.937 2.686 2.4 3.226 2.4 3.934C2.4 4.628 2.921 5.182 3.727 5.182H3.743ZM8.651 13.394V9.359C8.651 9.143 8.667 8.927 8.731 8.773C8.904 8.342 9.299 7.895 9.963 7.895C10.832 7.895 11.179 8.557 11.179 9.529V13.394H13.58V9.25C13.58 7.03 12.396 5.998 10.816 5.998C9.542 5.998 8.971 6.698 8.651 7.191V7.216H8.635L8.651 7.191V6.169H6.251C6.281 6.847 6.251 13.394 6.251 13.394H8.651Z\' fill=\'%23686868\'/></svg>");
+  --light-linkedin-hover: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 16 16\' fill=\'none\'> <path d=\'M0 1.146C0 0.513 0.526 0 1.175 0H14.825C15.474 0 16 0.513 16 1.146V14.854C16 15.487 15.474 16 14.825 16H1.175C0.526 16 0 15.487 0 14.854V1.146ZM4.943 13.394V6.169H2.542V13.394H4.943ZM3.743 5.182C4.58 5.182 5.101 4.628 5.101 3.934C5.086 3.225 4.581 2.686 3.759 2.686C2.937 2.686 2.4 3.226 2.4 3.934C2.4 4.628 2.921 5.182 3.727 5.182H3.743ZM8.651 13.394V9.359C8.651 9.143 8.667 8.927 8.731 8.773C8.904 8.342 9.299 7.895 9.963 7.895C10.832 7.895 11.179 8.557 11.179 9.529V13.394H13.58V9.25C13.58 7.03 12.396 5.998 10.816 5.998C9.542 5.998 8.971 6.698 8.651 7.191V7.216H8.635L8.651 7.191V6.169H6.251C6.281 6.847 6.251 13.394 6.251 13.394H8.651Z\' fill=\'%232E2E2E\'/></svg>");
+
+  --dark-0: #0c0c0c;
+  --dark-1: #232323;
+  --dark-2: #181818;
+  --dark-3: #3d3d3d;
+  --dark-4: #2e2e2e;
+  --dark-5: #9e9e9e;
+  --dark-6: #ededed;
+  --dark-7: #a5a5a5;
+  --dark-mail: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'19\' height=\'14\' viewBox=\'0 0 19 14\' fill=\'none\'> <path d=\'M2.01133 0H16.3779C17.4882 0 18.3893 0.901074 18.3893 2.01133V11.7806C18.3893 12.3141 18.1774 12.8256 17.8002 13.2028C17.423 13.58 16.9114 13.792 16.3779 13.792H2.01133C1.47789 13.792 0.9663 13.58 0.589104 13.2028C0.211907 12.8256 0 12.3141 0 11.7806L0 2.01133C0 0.901074 0.901074 0 2.01133 0ZM1.72399 11.7818C1.72399 11.9404 1.85272 12.0691 2.01133 12.0691H16.3779C16.4541 12.0691 16.5272 12.0388 16.5811 11.9849C16.635 11.9311 16.6653 11.858 16.6653 11.7818V4.37779L9.63138 8.50159C9.49898 8.5794 9.3482 8.62042 9.19463 8.62042C9.04107 8.62042 8.89029 8.5794 8.75789 8.50159L1.72399 4.37779V11.7818ZM16.6653 2.37911V2.01133C16.6653 1.93512 16.635 1.86204 16.5811 1.80815C16.5272 1.75427 16.4541 1.72399 16.3779 1.72399H2.01133C1.93512 1.72399 1.86204 1.75427 1.80815 1.80815C1.75427 1.86204 1.72399 1.93512 1.72399 2.01133V2.37911L9.19463 6.75806L16.6653 2.37911Z\' fill=\'%23A5A5A5\'/></svg>");
+  --dark-mail-hover: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'19\' height=\'14\' viewBox=\'0 0 19 14\' fill=\'none\'> <path d=\'M2.01133 0H16.3779C17.4882 0 18.3893 0.901074 18.3893 2.01133V11.7806C18.3893 12.3141 18.1774 12.8256 17.8002 13.2028C17.423 13.58 16.9114 13.792 16.3779 13.792H2.01133C1.47789 13.792 0.9663 13.58 0.589104 13.2028C0.211907 12.8256 0 12.3141 0 11.7806L0 2.01133C0 0.901074 0.901074 0 2.01133 0ZM1.72399 11.7818C1.72399 11.9404 1.85272 12.0691 2.01133 12.0691H16.3779C16.4541 12.0691 16.5272 12.0388 16.5811 11.9849C16.635 11.9311 16.6653 11.858 16.6653 11.7818V4.37779L9.63138 8.50159C9.49898 8.5794 9.3482 8.62042 9.19463 8.62042C9.04107 8.62042 8.89029 8.5794 8.75789 8.50159L1.72399 4.37779V11.7818ZM16.6653 2.37911V2.01133C16.6653 1.93512 16.635 1.86204 16.5811 1.80815C16.5272 1.75427 16.4541 1.72399 16.3779 1.72399H2.01133C1.93512 1.72399 1.86204 1.75427 1.80815 1.80815C1.75427 1.86204 1.72399 1.93512 1.72399 2.01133V2.37911L9.19463 6.75806L16.6653 2.37911Z\' fill=\'%23EDEDED\'/></svg>");
+  --dark-link: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'18\' height=\'18\' viewBox=\'0 0 18 18\' fill=\'none\'> <path d=\'M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z\' stroke=\'%23A5A5A5\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/> <path d=\'M5.80001 9C5.80001 13.4183 7.2327 17 9.00001 17C10.7673 17 12.2 13.4183 12.2 9C12.2 4.58172 10.7673 1 9.00001 1C7.2327 1 5.80001 4.58172 5.80001 9Z\' stroke=\'%23A5A5A5\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/> <path d=\'M1 9H17\' stroke=\'%23A5A5A5\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/></svg>");
+  --dark-link-hover: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'18\' height=\'18\' viewBox=\'0 0 18 18\' fill=\'none\'> <path d=\'M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z\' stroke=\'%23EDEDED\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/> <path d=\'M5.80001 9C5.80001 13.4183 7.2327 17 9.00001 17C10.7673 17 12.2 13.4183 12.2 9C12.2 4.58172 10.7673 1 9.00001 1C7.2327 1 5.80001 4.58172 5.80001 9Z\' stroke=\'%23A5A5A5\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/> <path d=\'M1 9H17\' stroke=\'%23EDEDED\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/></svg>");
+  --dark-linkedin: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 16 16\' fill=\'none\'> <path d=\'M0 1.146C0 0.513 0.526 0 1.175 0H14.825C15.474 0 16 0.513 16 1.146V14.854C16 15.487 15.474 16 14.825 16H1.175C0.526 16 0 15.487 0 14.854V1.146ZM4.943 13.394V6.169H2.542V13.394H4.943ZM3.743 5.182C4.58 5.182 5.101 4.628 5.101 3.934C5.086 3.225 4.581 2.686 3.759 2.686C2.937 2.686 2.4 3.226 2.4 3.934C2.4 4.628 2.921 5.182 3.727 5.182H3.743ZM8.651 13.394V9.359C8.651 9.143 8.667 8.927 8.731 8.773C8.904 8.342 9.299 7.895 9.963 7.895C10.832 7.895 11.179 8.557 11.179 9.529V13.394H13.58V9.25C13.58 7.03 12.396 5.998 10.816 5.998C9.542 5.998 8.971 6.698 8.651 7.191V7.216H8.635L8.651 7.191V6.169H6.251C6.281 6.847 6.251 13.394 6.251 13.394H8.651Z\' fill=\'%23A5A5A5\'/></svg>");
+  --dark-linkedin-hover: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 16 16\' fill=\'none\'> <path d=\'M0 1.146C0 0.513 0.526 0 1.175 0H14.825C15.474 0 16 0.513 16 1.146V14.854C16 15.487 15.474 16 14.825 16H1.175C0.526 16 0 15.487 0 14.854V1.146ZM4.943 13.394V6.169H2.542V13.394H4.943ZM3.743 5.182C4.58 5.182 5.101 4.628 5.101 3.934C5.086 3.225 4.581 2.686 3.759 2.686C2.937 2.686 2.4 3.226 2.4 3.934C2.4 4.628 2.921 5.182 3.727 5.182H3.743ZM8.651 13.394V9.359C8.651 9.143 8.667 8.927 8.731 8.773C8.904 8.342 9.299 7.895 9.963 7.895C10.832 7.895 11.179 8.557 11.179 9.529V13.394H13.58V9.25C13.58 7.03 12.396 5.998 10.816 5.998C9.542 5.998 8.971 6.698 8.651 7.191V7.216H8.635L8.651 7.191V6.169H6.251C6.281 6.847 6.251 13.394 6.251 13.394H8.651Z\' fill=\'%23EDEDED\'/></svg>");
+
+  /* usage */
+  --mode-switcher-bg: var(--light-5);
+  --mode-switcher-bg-hover: var(--light-4);
+  --bg: var(--light-1);
+  --title: var(--light-5);
+  --card-filter: 98%;
+  --card-bg: var(--light-3);
+  --card-bg-hover: var(--light-0);
+  --card-meta-name: var(--light-5);
+  --card-meta-role: var(--light-6);
+  --card-link: var(--light-5);
+  --card-link-hover: var(--light-5);
+  --card-link-bg: var(--light-2);
+  --card-link-bg-hover: var(--light-0);
+  --card-link-icon: var(--light-link);
+  --card-link-icon-hover: var(--light-link-hover);
+  --card-mail-icon: var(--light-mail);
+  --card-mail-icon-hover: var(--light-mail-hover);
+  --card-linkedin-icon: var(--light-linkedin);
+  --card-linkedin-icon-hover: var(--light-linkedin-hover);
+}
+
+/* system dark fallback */
+@media (prefers-color-scheme: light){
+  :root {
+    --mode-switcher-bg: var(--light-5);
+    --mode-switcher-bg-hover: var(--light-4);
+    --bg: var(--light-1);
+    --title: var(--light-5);
+    --card-filter: 98%;
+    --card-bg: var(--light-3);
+    --card-bg-hover: var(--light-0);
+    --card-meta-name: var(--light-5);
+    --card-meta-role: var(--light-6);
+    --card-link: var(--light-5);
+    --card-link-hover: var(--light-5);
+    --card-link-bg: var(--light-2);
+    --card-link-bg-hover: var(--light-0);
+    --card-link-icon: var(--light-link);
+    --card-link-icon-hover: var(--light-link-hover);
+    --card-mail-icon: var(--light-mail);
+    --card-mail-icon-hover: var(--light-mail-hover);
+    --card-linkedin-icon: var(--light-linkedin);
+    --card-linkedin-icon-hover: var(--light-linkedin-hover);
+  }
+}
+
+/* explicit dark theme override */
+[data-theme="dark"]{
+  --bg: var(--dark-0);
+  --mode-switcher-bg: var(--dark-7);
+  --mode-switcher-bg-hover: var(--dark-6);
+  --title: var(--dark-6);
+  --card-filter: 80%;
+  --card-bg: var(--dark-1);
+  --card-bg-hover: var(--dark-3);
+  --card-meta-name: var(--dark-6); 
+  --card-meta-role: var(--dark-5);
+  --card-link: var(--dark-7);
+  --card-link-hover: var(--dark-6);
+  --card-link-bg: var(--dark-4);
+  --card-link-bg-hover: var(--dark-2);
+  --card-link-icon: var(--dark-link);
+  --card-link-icon-hover: var(--dark-link-hover);
+  --card-mail-icon: var(--dark-mail);
+  --card-mail-icon-hover: var(--dark-mail-hover);
+  --card-linkedin-icon: var(--dark-linkedin);
+  --card-linkedin-icon-hover: var(--dark-linkedin-hover);
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "SourceSerif4-Regular", serif;
+  height: 100%;
+  min-height: 100vh;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+h1 {
+  color: var(--title);
+  font-family: "Geist-Light", sans-serif;
+  font-size: 3rem;
+  text-indent: 1.5rem;
+}
